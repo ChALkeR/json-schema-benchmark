@@ -10172,6 +10172,8394 @@ When running tests [`revalidator`](https://github.com/flatiron/revalidator) muta
 ```
 
 # Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'x' as number, Valid on numbers`
+## Original schema
+```js
+{
+	"properties": {
+		"x": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"x": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'x' as number, Valid on arrays`
+## Original schema
+```js
+{
+	"properties": {
+		"x": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"x": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'x' as number, Valid if not present`
+## Original schema
+```js
+{
+	"properties": {
+		"x": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"x": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'x' as number, Valid if correct`
+## Original schema
+```js
+{
+	"properties": {
+		"x": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"x": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'x' as number, Invalid if incorrect (string)`
+## Original schema
+```js
+{
+	"properties": {
+		"x": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"x": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'x' as number, Invalid if incorrect (empty string)`
+## Original schema
+```js
+{
+	"properties": {
+		"x": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"x": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'x' as number, Invalid if incorrect (boolean true)`
+## Original schema
+```js
+{
+	"properties": {
+		"x": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"x": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'x' as number, Invalid if incorrect (boolean false)`
+## Original schema
+```js
+{
+	"properties": {
+		"x": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"x": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'x' as number, Invalid if incorrect (array)`
+## Original schema
+```js
+{
+	"properties": {
+		"x": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"x": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'x' as number, Invalid if incorrect (empty array)`
+## Original schema
+```js
+{
+	"properties": {
+		"x": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"x": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'x' as number, Invalid if incorrect (object)`
+## Original schema
+```js
+{
+	"properties": {
+		"x": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"x": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'x' as object, Valid on numbers`
+## Original schema
+```js
+{
+	"properties": {
+		"x": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"x": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'x' as object, Valid on arrays`
+## Original schema
+```js
+{
+	"properties": {
+		"x": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"x": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'x' as object, Valid if not present`
+## Original schema
+```js
+{
+	"properties": {
+		"x": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"x": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'x' as object, Valid if correct`
+## Original schema
+```js
+{
+	"properties": {
+		"x": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"x": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'x' as object, Invalid if incorrect (string)`
+## Original schema
+```js
+{
+	"properties": {
+		"x": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"x": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'x' as object, Invalid if incorrect (empty string)`
+## Original schema
+```js
+{
+	"properties": {
+		"x": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"x": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'x' as object, Invalid if incorrect (boolean true)`
+## Original schema
+```js
+{
+	"properties": {
+		"x": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"x": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'x' as object, Invalid if incorrect (boolean false)`
+## Original schema
+```js
+{
+	"properties": {
+		"x": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"x": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'x' as object, Invalid if incorrect (array)`
+## Original schema
+```js
+{
+	"properties": {
+		"x": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"x": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'x' as object, Invalid if incorrect (empty array)`
+## Original schema
+```js
+{
+	"properties": {
+		"x": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"x": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'x' as object, Invalid if incorrect (zero number)`
+## Original schema
+```js
+{
+	"properties": {
+		"x": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"x": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'x' as object, Invalid if incorrect (number)`
+## Original schema
+```js
+{
+	"properties": {
+		"x": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"x": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'x' via required, Valid on numbers`
+## Original schema
+```js
+{
+	"required": [
+		"x"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"x"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'x' via required, Valid on arrays`
+## Original schema
+```js
+{
+	"required": [
+		"x"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"x"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'x' via required, Invalid if not present`
+## Original schema
+```js
+{
+	"required": [
+		"x"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"x"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'x' via required, Valid if present (string)`
+## Original schema
+```js
+{
+	"required": [
+		"x"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"x"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'x' via required, Valid if present (empty string)`
+## Original schema
+```js
+{
+	"required": [
+		"x"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"x"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'x' via required, Valid if present (boolean true)`
+## Original schema
+```js
+{
+	"required": [
+		"x"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"x"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'x' via required, Valid if present (boolean false)`
+## Original schema
+```js
+{
+	"required": [
+		"x"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"x"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'x' via required, Valid if present (array)`
+## Original schema
+```js
+{
+	"required": [
+		"x"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"x"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'x' via required, Valid if present (empty array)`
+## Original schema
+```js
+{
+	"required": [
+		"x"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"x"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'x' via required, Valid if present (object)`
+## Original schema
+```js
+{
+	"required": [
+		"x"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"x"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'x' via required, Valid if present (zero number)`
+## Original schema
+```js
+{
+	"required": [
+		"x"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"x"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'x' via required, Valid if present (number)`
+## Original schema
+```js
+{
+	"required": [
+		"x"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"x"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'length' as number, Valid on numbers`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'length' as number, Valid on arrays`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'length' as number, Valid if not present`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'length' as number, Valid if correct`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'length' as number, Invalid if incorrect (string)`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'length' as number, Invalid if incorrect (empty string)`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'length' as number, Invalid if incorrect (boolean true)`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'length' as number, Invalid if incorrect (boolean false)`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'length' as number, Invalid if incorrect (array)`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'length' as number, Invalid if incorrect (empty array)`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'length' as number, Invalid if incorrect (object)`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'length' as object, Valid on numbers`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'length' as object, Valid on arrays`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'length' as object, Valid if not present`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'length' as object, Valid if correct`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'length' as object, Invalid if incorrect (string)`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'length' as object, Invalid if incorrect (empty string)`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'length' as object, Invalid if incorrect (boolean true)`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'length' as object, Invalid if incorrect (boolean false)`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'length' as object, Invalid if incorrect (array)`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'length' as object, Invalid if incorrect (empty array)`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'length' as object, Invalid if incorrect (zero number)`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'length' as object, Invalid if incorrect (number)`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'length' via required, Valid on numbers`
+## Original schema
+```js
+{
+	"required": [
+		"length"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"length"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'length' via required, Valid on arrays`
+## Original schema
+```js
+{
+	"required": [
+		"length"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"length"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'length' via required, Invalid if not present`
+## Original schema
+```js
+{
+	"required": [
+		"length"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"length"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'length' via required, Valid if present (string)`
+## Original schema
+```js
+{
+	"required": [
+		"length"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"length"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'length' via required, Valid if present (empty string)`
+## Original schema
+```js
+{
+	"required": [
+		"length"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"length"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'length' via required, Valid if present (boolean true)`
+## Original schema
+```js
+{
+	"required": [
+		"length"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"length"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'length' via required, Valid if present (boolean false)`
+## Original schema
+```js
+{
+	"required": [
+		"length"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"length"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'length' via required, Valid if present (array)`
+## Original schema
+```js
+{
+	"required": [
+		"length"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"length"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'length' via required, Valid if present (empty array)`
+## Original schema
+```js
+{
+	"required": [
+		"length"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"length"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'length' via required, Valid if present (object)`
+## Original schema
+```js
+{
+	"required": [
+		"length"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"length"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'length' via required, Valid if present (zero number)`
+## Original schema
+```js
+{
+	"required": [
+		"length"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"length"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'length' via required, Valid if present (number)`
+## Original schema
+```js
+{
+	"required": [
+		"length"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"length"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'toString' as number, Valid on numbers`
+## Original schema
+```js
+{
+	"properties": {
+		"toString": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"toString": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'toString' as number, Valid on arrays`
+## Original schema
+```js
+{
+	"properties": {
+		"toString": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"toString": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'toString' as number, Valid if not present`
+## Original schema
+```js
+{
+	"properties": {
+		"toString": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"toString": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'toString' as number, Valid if correct`
+## Original schema
+```js
+{
+	"properties": {
+		"toString": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"toString": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'toString' as number, Invalid if incorrect (string)`
+## Original schema
+```js
+{
+	"properties": {
+		"toString": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"toString": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'toString' as number, Invalid if incorrect (empty string)`
+## Original schema
+```js
+{
+	"properties": {
+		"toString": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"toString": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'toString' as number, Invalid if incorrect (boolean true)`
+## Original schema
+```js
+{
+	"properties": {
+		"toString": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"toString": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'toString' as number, Invalid if incorrect (boolean false)`
+## Original schema
+```js
+{
+	"properties": {
+		"toString": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"toString": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'toString' as number, Invalid if incorrect (array)`
+## Original schema
+```js
+{
+	"properties": {
+		"toString": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"toString": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'toString' as number, Invalid if incorrect (empty array)`
+## Original schema
+```js
+{
+	"properties": {
+		"toString": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"toString": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'toString' as number, Invalid if incorrect (object)`
+## Original schema
+```js
+{
+	"properties": {
+		"toString": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"toString": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'toString' as object, Valid on numbers`
+## Original schema
+```js
+{
+	"properties": {
+		"toString": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"toString": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'toString' as object, Valid on arrays`
+## Original schema
+```js
+{
+	"properties": {
+		"toString": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"toString": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'toString' as object, Valid if not present`
+## Original schema
+```js
+{
+	"properties": {
+		"toString": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"toString": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'toString' as object, Valid if correct`
+## Original schema
+```js
+{
+	"properties": {
+		"toString": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"toString": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'toString' as object, Invalid if incorrect (string)`
+## Original schema
+```js
+{
+	"properties": {
+		"toString": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"toString": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'toString' as object, Invalid if incorrect (empty string)`
+## Original schema
+```js
+{
+	"properties": {
+		"toString": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"toString": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'toString' as object, Invalid if incorrect (boolean true)`
+## Original schema
+```js
+{
+	"properties": {
+		"toString": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"toString": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'toString' as object, Invalid if incorrect (boolean false)`
+## Original schema
+```js
+{
+	"properties": {
+		"toString": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"toString": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'toString' as object, Invalid if incorrect (array)`
+## Original schema
+```js
+{
+	"properties": {
+		"toString": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"toString": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'toString' as object, Invalid if incorrect (empty array)`
+## Original schema
+```js
+{
+	"properties": {
+		"toString": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"toString": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'toString' as object, Invalid if incorrect (zero number)`
+## Original schema
+```js
+{
+	"properties": {
+		"toString": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"toString": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'toString' as object, Invalid if incorrect (number)`
+## Original schema
+```js
+{
+	"properties": {
+		"toString": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"toString": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'toString' via required, Valid on numbers`
+## Original schema
+```js
+{
+	"required": [
+		"toString"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"toString"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'toString' via required, Valid on arrays`
+## Original schema
+```js
+{
+	"required": [
+		"toString"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"toString"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'toString' via required, Invalid if not present`
+## Original schema
+```js
+{
+	"required": [
+		"toString"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"toString"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'toString' via required, Valid if present (string)`
+## Original schema
+```js
+{
+	"required": [
+		"toString"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"toString"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'toString' via required, Valid if present (empty string)`
+## Original schema
+```js
+{
+	"required": [
+		"toString"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"toString"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'toString' via required, Valid if present (boolean true)`
+## Original schema
+```js
+{
+	"required": [
+		"toString"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"toString"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'toString' via required, Valid if present (boolean false)`
+## Original schema
+```js
+{
+	"required": [
+		"toString"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"toString"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'toString' via required, Valid if present (array)`
+## Original schema
+```js
+{
+	"required": [
+		"toString"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"toString"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'toString' via required, Valid if present (empty array)`
+## Original schema
+```js
+{
+	"required": [
+		"toString"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"toString"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'toString' via required, Valid if present (object)`
+## Original schema
+```js
+{
+	"required": [
+		"toString"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"toString"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'toString' via required, Valid if present (zero number)`
+## Original schema
+```js
+{
+	"required": [
+		"toString"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"toString"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'toString' via required, Valid if present (number)`
+## Original schema
+```js
+{
+	"required": [
+		"toString"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"toString"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'constructor' as number, Valid on numbers`
+## Original schema
+```js
+{
+	"properties": {
+		"constructor": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"constructor": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'constructor' as number, Valid on arrays`
+## Original schema
+```js
+{
+	"properties": {
+		"constructor": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"constructor": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'constructor' as number, Valid if not present`
+## Original schema
+```js
+{
+	"properties": {
+		"constructor": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"constructor": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'constructor' as number, Valid if correct`
+## Original schema
+```js
+{
+	"properties": {
+		"constructor": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"constructor": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'constructor' as number, Invalid if incorrect (string)`
+## Original schema
+```js
+{
+	"properties": {
+		"constructor": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"constructor": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'constructor' as number, Invalid if incorrect (empty string)`
+## Original schema
+```js
+{
+	"properties": {
+		"constructor": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"constructor": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'constructor' as number, Invalid if incorrect (boolean true)`
+## Original schema
+```js
+{
+	"properties": {
+		"constructor": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"constructor": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'constructor' as number, Invalid if incorrect (boolean false)`
+## Original schema
+```js
+{
+	"properties": {
+		"constructor": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"constructor": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'constructor' as number, Invalid if incorrect (array)`
+## Original schema
+```js
+{
+	"properties": {
+		"constructor": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"constructor": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'constructor' as number, Invalid if incorrect (empty array)`
+## Original schema
+```js
+{
+	"properties": {
+		"constructor": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"constructor": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'constructor' as number, Invalid if incorrect (object)`
+## Original schema
+```js
+{
+	"properties": {
+		"constructor": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"constructor": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'constructor' as object, Valid on numbers`
+## Original schema
+```js
+{
+	"properties": {
+		"constructor": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"constructor": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'constructor' as object, Valid on arrays`
+## Original schema
+```js
+{
+	"properties": {
+		"constructor": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"constructor": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'constructor' as object, Valid if not present`
+## Original schema
+```js
+{
+	"properties": {
+		"constructor": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"constructor": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'constructor' as object, Valid if correct`
+## Original schema
+```js
+{
+	"properties": {
+		"constructor": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"constructor": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'constructor' as object, Invalid if incorrect (string)`
+## Original schema
+```js
+{
+	"properties": {
+		"constructor": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"constructor": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'constructor' as object, Invalid if incorrect (empty string)`
+## Original schema
+```js
+{
+	"properties": {
+		"constructor": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"constructor": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'constructor' as object, Invalid if incorrect (boolean true)`
+## Original schema
+```js
+{
+	"properties": {
+		"constructor": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"constructor": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'constructor' as object, Invalid if incorrect (boolean false)`
+## Original schema
+```js
+{
+	"properties": {
+		"constructor": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"constructor": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'constructor' as object, Invalid if incorrect (array)`
+## Original schema
+```js
+{
+	"properties": {
+		"constructor": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"constructor": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'constructor' as object, Invalid if incorrect (empty array)`
+## Original schema
+```js
+{
+	"properties": {
+		"constructor": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"constructor": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'constructor' as object, Invalid if incorrect (zero number)`
+## Original schema
+```js
+{
+	"properties": {
+		"constructor": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"constructor": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'constructor' as object, Invalid if incorrect (number)`
+## Original schema
+```js
+{
+	"properties": {
+		"constructor": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"constructor": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'constructor' via required, Valid on numbers`
+## Original schema
+```js
+{
+	"required": [
+		"constructor"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"constructor"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'constructor' via required, Valid on arrays`
+## Original schema
+```js
+{
+	"required": [
+		"constructor"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"constructor"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'constructor' via required, Invalid if not present`
+## Original schema
+```js
+{
+	"required": [
+		"constructor"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"constructor"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'constructor' via required, Valid if present (string)`
+## Original schema
+```js
+{
+	"required": [
+		"constructor"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"constructor"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'constructor' via required, Valid if present (empty string)`
+## Original schema
+```js
+{
+	"required": [
+		"constructor"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"constructor"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'constructor' via required, Valid if present (boolean true)`
+## Original schema
+```js
+{
+	"required": [
+		"constructor"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"constructor"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'constructor' via required, Valid if present (boolean false)`
+## Original schema
+```js
+{
+	"required": [
+		"constructor"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"constructor"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'constructor' via required, Valid if present (array)`
+## Original schema
+```js
+{
+	"required": [
+		"constructor"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"constructor"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'constructor' via required, Valid if present (empty array)`
+## Original schema
+```js
+{
+	"required": [
+		"constructor"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"constructor"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'constructor' via required, Valid if present (object)`
+## Original schema
+```js
+{
+	"required": [
+		"constructor"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"constructor"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'constructor' via required, Valid if present (zero number)`
+## Original schema
+```js
+{
+	"required": [
+		"constructor"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"constructor"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: 'constructor' via required, Valid if present (number)`
+## Original schema
+```js
+{
+	"required": [
+		"constructor"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"constructor"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: '__proto__' as number, Valid on numbers`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: '__proto__' as number, Valid on arrays`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: '__proto__' as number, Valid if not present`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: '__proto__' as number, Valid if correct`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: '__proto__' as number, Invalid if incorrect (string)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: '__proto__' as number, Invalid if incorrect (empty string)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: '__proto__' as number, Invalid if incorrect (boolean true)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: '__proto__' as number, Invalid if incorrect (boolean false)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: '__proto__' as number, Invalid if incorrect (array)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: '__proto__' as number, Invalid if incorrect (empty array)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: '__proto__' as number, Invalid if incorrect (object)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: '__proto__' as object, Valid on numbers`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: '__proto__' as object, Valid on arrays`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: '__proto__' as object, Valid if not present`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: '__proto__' as object, Valid if correct`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: '__proto__' as object, Invalid if incorrect (string)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: '__proto__' as object, Invalid if incorrect (empty string)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: '__proto__' as object, Invalid if incorrect (boolean true)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: '__proto__' as object, Invalid if incorrect (boolean false)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: '__proto__' as object, Invalid if incorrect (array)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: '__proto__' as object, Invalid if incorrect (empty array)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: '__proto__' as object, Invalid if incorrect (zero number)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: '__proto__' as object, Invalid if incorrect (number)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: '__proto__' via required, Valid on numbers`
+## Original schema
+```js
+{
+	"required": [
+		"__proto__"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"__proto__"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: '__proto__' via required, Valid on arrays`
+## Original schema
+```js
+{
+	"required": [
+		"__proto__"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"__proto__"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: '__proto__' via required, Invalid if not present`
+## Original schema
+```js
+{
+	"required": [
+		"__proto__"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"__proto__"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: '__proto__' via required, Valid if present (string)`
+## Original schema
+```js
+{
+	"required": [
+		"__proto__"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"__proto__"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: '__proto__' via required, Valid if present (empty string)`
+## Original schema
+```js
+{
+	"required": [
+		"__proto__"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"__proto__"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: '__proto__' via required, Valid if present (boolean true)`
+## Original schema
+```js
+{
+	"required": [
+		"__proto__"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"__proto__"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: '__proto__' via required, Valid if present (boolean false)`
+## Original schema
+```js
+{
+	"required": [
+		"__proto__"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"__proto__"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: '__proto__' via required, Valid if present (array)`
+## Original schema
+```js
+{
+	"required": [
+		"__proto__"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"__proto__"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: '__proto__' via required, Valid if present (empty array)`
+## Original schema
+```js
+{
+	"required": [
+		"__proto__"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"__proto__"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: '__proto__' via required, Valid if present (object)`
+## Original schema
+```js
+{
+	"required": [
+		"__proto__"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"__proto__"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: '__proto__' via required, Valid if present (zero number)`
+## Original schema
+```js
+{
+	"required": [
+		"__proto__"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"__proto__"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see elements non existing on the object: '__proto__' via required, Valid if present (number)`
+## Original schema
+```js
+{
+	"required": [
+		"__proto__"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"__proto__"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value: 'foo' as number, Valid on numbers`
+## Original schema
+```js
+{
+	"properties": {
+		"foo": {
+			"default": "foo"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"foo": {
+			"default": "foo"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value: 'foo' as number, Valid on arrays`
+## Original schema
+```js
+{
+	"properties": {
+		"foo": {
+			"default": "foo"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"foo": {
+			"default": "foo"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value: 'foo' as number, Valid if not present`
+## Original schema
+```js
+{
+	"properties": {
+		"foo": {
+			"default": "foo"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"foo": {
+			"default": "foo"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value: 'foo' as number, Valid if present (string)`
+## Original schema
+```js
+{
+	"properties": {
+		"foo": {
+			"default": "foo"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"foo": {
+			"default": "foo"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value: 'foo' as number, Valid if present (empty string)`
+## Original schema
+```js
+{
+	"properties": {
+		"foo": {
+			"default": "foo"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"foo": {
+			"default": "foo"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value: 'foo' as number, Valid if present (boolean true)`
+## Original schema
+```js
+{
+	"properties": {
+		"foo": {
+			"default": "foo"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"foo": {
+			"default": "foo"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value: 'foo' as number, Valid if present (boolean false)`
+## Original schema
+```js
+{
+	"properties": {
+		"foo": {
+			"default": "foo"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"foo": {
+			"default": "foo"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value: 'foo' as number, Valid if present (array)`
+## Original schema
+```js
+{
+	"properties": {
+		"foo": {
+			"default": "foo"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"foo": {
+			"default": "foo"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value: 'foo' as number, Valid if present (empty array)`
+## Original schema
+```js
+{
+	"properties": {
+		"foo": {
+			"default": "foo"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"foo": {
+			"default": "foo"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value: 'foo' as number, Valid if present (object)`
+## Original schema
+```js
+{
+	"properties": {
+		"foo": {
+			"default": "foo"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"foo": {
+			"default": "foo"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value: 'foo' as number, Valid if present (zero number)`
+## Original schema
+```js
+{
+	"properties": {
+		"foo": {
+			"default": "foo"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"foo": {
+			"default": "foo"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value: 'foo' as number, Valid if present (number)`
+## Original schema
+```js
+{
+	"properties": {
+		"foo": {
+			"default": "foo"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"foo": {
+			"default": "foo"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value on a '__proto__' property: 'foo' as object, Valid on numbers`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"foo": {
+					"default": "foo"
+				}
+			}
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"foo": {
+					"default": "foo"
+				}
+			},
+			"additionalProperties": true
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value on a '__proto__' property: 'foo' as object, Valid on arrays`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"foo": {
+					"default": "foo"
+				}
+			}
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"foo": {
+					"default": "foo"
+				}
+			},
+			"additionalProperties": true
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value on a '__proto__' property: 'foo' as object, Valid if not present`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"foo": {
+					"default": "foo"
+				}
+			}
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"foo": {
+					"default": "foo"
+				}
+			},
+			"additionalProperties": true
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value on a '__proto__' property: 'foo' as object, Valid if present (string)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"foo": {
+					"default": "foo"
+				}
+			}
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"foo": {
+					"default": "foo"
+				}
+			},
+			"additionalProperties": true
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value on a '__proto__' property: 'foo' as object, Valid if present (empty string)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"foo": {
+					"default": "foo"
+				}
+			}
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"foo": {
+					"default": "foo"
+				}
+			},
+			"additionalProperties": true
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value on a '__proto__' property: 'foo' as object, Valid if present (boolean true)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"foo": {
+					"default": "foo"
+				}
+			}
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"foo": {
+					"default": "foo"
+				}
+			},
+			"additionalProperties": true
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value on a '__proto__' property: 'foo' as object, Valid if present (boolean false)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"foo": {
+					"default": "foo"
+				}
+			}
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"foo": {
+					"default": "foo"
+				}
+			},
+			"additionalProperties": true
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value on a '__proto__' property: 'foo' as object, Valid if present (array)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"foo": {
+					"default": "foo"
+				}
+			}
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"foo": {
+					"default": "foo"
+				}
+			},
+			"additionalProperties": true
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value on a '__proto__' property: 'foo' as object, Valid if present (empty array)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"foo": {
+					"default": "foo"
+				}
+			}
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"foo": {
+					"default": "foo"
+				}
+			},
+			"additionalProperties": true
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value on a '__proto__' property: 'foo' as object, Valid if present (object)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"foo": {
+					"default": "foo"
+				}
+			}
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"foo": {
+					"default": "foo"
+				}
+			},
+			"additionalProperties": true
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value on a '__proto__' property: 'foo' as object, Valid if present (zero number)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"foo": {
+					"default": "foo"
+				}
+			}
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"foo": {
+					"default": "foo"
+				}
+			},
+			"additionalProperties": true
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value on a '__proto__' property: 'foo' as object, Valid if present (number)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"foo": {
+					"default": "foo"
+				}
+			}
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"foo": {
+					"default": "foo"
+				}
+			},
+			"additionalProperties": true
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'foo' via required, Valid on numbers`
+## Original schema
+```js
+{
+	"required": [
+		"foo"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"foo"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'foo' via required, Valid on arrays`
+## Original schema
+```js
+{
+	"required": [
+		"foo"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"foo"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'foo' via required, Invalid if not present`
+## Original schema
+```js
+{
+	"required": [
+		"foo"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"foo"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'foo' via required, Valid if present (string)`
+## Original schema
+```js
+{
+	"required": [
+		"foo"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"foo"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'foo' via required, Valid if present (empty string)`
+## Original schema
+```js
+{
+	"required": [
+		"foo"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"foo"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'foo' via required, Valid if present (boolean true)`
+## Original schema
+```js
+{
+	"required": [
+		"foo"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"foo"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'foo' via required, Valid if present (boolean false)`
+## Original schema
+```js
+{
+	"required": [
+		"foo"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"foo"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'foo' via required, Valid if present (array)`
+## Original schema
+```js
+{
+	"required": [
+		"foo"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"foo"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'foo' via required, Valid if present (empty array)`
+## Original schema
+```js
+{
+	"required": [
+		"foo"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"foo"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'foo' via required, Valid if present (object)`
+## Original schema
+```js
+{
+	"required": [
+		"foo"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"foo"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'foo' via required, Valid if present (zero number)`
+## Original schema
+```js
+{
+	"required": [
+		"foo"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"foo"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'foo' via required, Valid if present (number)`
+## Original schema
+```js
+{
+	"required": [
+		"foo"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"foo"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'foo' via required, Valid on numbers`
+## Original schema
+```js
+{
+	"properties": {
+		"foo": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"foo": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'foo' via required, Valid on arrays`
+## Original schema
+```js
+{
+	"properties": {
+		"foo": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"foo": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'foo' via required, Valid if not present`
+## Original schema
+```js
+{
+	"properties": {
+		"foo": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"foo": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'foo' via required, Valid if correct`
+## Original schema
+```js
+{
+	"properties": {
+		"foo": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"foo": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'foo' via required, Invalid if incorrect (string)`
+## Original schema
+```js
+{
+	"properties": {
+		"foo": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"foo": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'foo' via required, Invalid if incorrect (empty string)`
+## Original schema
+```js
+{
+	"properties": {
+		"foo": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"foo": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'foo' via required, Invalid if incorrect (boolean true)`
+## Original schema
+```js
+{
+	"properties": {
+		"foo": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"foo": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'foo' via required, Invalid if incorrect (boolean false)`
+## Original schema
+```js
+{
+	"properties": {
+		"foo": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"foo": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'foo' via required, Invalid if incorrect (array)`
+## Original schema
+```js
+{
+	"properties": {
+		"foo": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"foo": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'foo' via required, Invalid if incorrect (empty array)`
+## Original schema
+```js
+{
+	"properties": {
+		"foo": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"foo": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'foo' via required, Invalid if incorrect (object)`
+## Original schema
+```js
+{
+	"properties": {
+		"foo": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"foo": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'foo' via required, Valid on numbers`
+## Original schema
+```js
+{
+	"properties": {
+		"foo": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"foo": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'foo' via required, Valid on arrays`
+## Original schema
+```js
+{
+	"properties": {
+		"foo": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"foo": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'foo' via required, Valid if not present`
+## Original schema
+```js
+{
+	"properties": {
+		"foo": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"foo": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'foo' via required, Valid if correct`
+## Original schema
+```js
+{
+	"properties": {
+		"foo": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"foo": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'foo' via required, Invalid if incorrect (string)`
+## Original schema
+```js
+{
+	"properties": {
+		"foo": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"foo": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'foo' via required, Invalid if incorrect (empty string)`
+## Original schema
+```js
+{
+	"properties": {
+		"foo": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"foo": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'foo' via required, Invalid if incorrect (boolean true)`
+## Original schema
+```js
+{
+	"properties": {
+		"foo": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"foo": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'foo' via required, Invalid if incorrect (boolean false)`
+## Original schema
+```js
+{
+	"properties": {
+		"foo": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"foo": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'foo' via required, Invalid if incorrect (array)`
+## Original schema
+```js
+{
+	"properties": {
+		"foo": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"foo": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'foo' via required, Invalid if incorrect (empty array)`
+## Original schema
+```js
+{
+	"properties": {
+		"foo": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"foo": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'foo' via required, Invalid if incorrect (zero number)`
+## Original schema
+```js
+{
+	"properties": {
+		"foo": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"foo": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'foo' via required, Invalid if incorrect (number)`
+## Original schema
+```js
+{
+	"properties": {
+		"foo": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"foo": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value: 'length' as number, Valid on numbers`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"default": "foo"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"default": "foo"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value: 'length' as number, Valid on arrays`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"default": "foo"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"default": "foo"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value: 'length' as number, Valid if not present`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"default": "foo"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"default": "foo"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value: 'length' as number, Valid if present (string)`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"default": "foo"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"default": "foo"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value: 'length' as number, Valid if present (empty string)`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"default": "foo"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"default": "foo"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value: 'length' as number, Valid if present (boolean true)`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"default": "foo"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"default": "foo"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value: 'length' as number, Valid if present (boolean false)`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"default": "foo"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"default": "foo"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value: 'length' as number, Valid if present (array)`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"default": "foo"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"default": "foo"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value: 'length' as number, Valid if present (empty array)`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"default": "foo"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"default": "foo"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value: 'length' as number, Valid if present (object)`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"default": "foo"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"default": "foo"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value: 'length' as number, Valid if present (zero number)`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"default": "foo"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"default": "foo"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value: 'length' as number, Valid if present (number)`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"default": "foo"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"default": "foo"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value on a '__proto__' property: 'length' as object, Valid on numbers`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"length": {
+					"default": "foo"
+				}
+			}
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"length": {
+					"default": "foo"
+				}
+			},
+			"additionalProperties": true
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value on a '__proto__' property: 'length' as object, Valid on arrays`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"length": {
+					"default": "foo"
+				}
+			}
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"length": {
+					"default": "foo"
+				}
+			},
+			"additionalProperties": true
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value on a '__proto__' property: 'length' as object, Valid if not present`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"length": {
+					"default": "foo"
+				}
+			}
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"length": {
+					"default": "foo"
+				}
+			},
+			"additionalProperties": true
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value on a '__proto__' property: 'length' as object, Valid if present (string)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"length": {
+					"default": "foo"
+				}
+			}
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"length": {
+					"default": "foo"
+				}
+			},
+			"additionalProperties": true
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value on a '__proto__' property: 'length' as object, Valid if present (empty string)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"length": {
+					"default": "foo"
+				}
+			}
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"length": {
+					"default": "foo"
+				}
+			},
+			"additionalProperties": true
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value on a '__proto__' property: 'length' as object, Valid if present (boolean true)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"length": {
+					"default": "foo"
+				}
+			}
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"length": {
+					"default": "foo"
+				}
+			},
+			"additionalProperties": true
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value on a '__proto__' property: 'length' as object, Valid if present (boolean false)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"length": {
+					"default": "foo"
+				}
+			}
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"length": {
+					"default": "foo"
+				}
+			},
+			"additionalProperties": true
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value on a '__proto__' property: 'length' as object, Valid if present (array)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"length": {
+					"default": "foo"
+				}
+			}
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"length": {
+					"default": "foo"
+				}
+			},
+			"additionalProperties": true
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value on a '__proto__' property: 'length' as object, Valid if present (empty array)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"length": {
+					"default": "foo"
+				}
+			}
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"length": {
+					"default": "foo"
+				}
+			},
+			"additionalProperties": true
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value on a '__proto__' property: 'length' as object, Valid if present (object)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"length": {
+					"default": "foo"
+				}
+			}
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"length": {
+					"default": "foo"
+				}
+			},
+			"additionalProperties": true
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value on a '__proto__' property: 'length' as object, Valid if present (zero number)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"length": {
+					"default": "foo"
+				}
+			}
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"length": {
+					"default": "foo"
+				}
+			},
+			"additionalProperties": true
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value on a '__proto__' property: 'length' as object, Valid if present (number)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"length": {
+					"default": "foo"
+				}
+			}
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"length": {
+					"default": "foo"
+				}
+			},
+			"additionalProperties": true
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'length' via required, Valid on numbers`
+## Original schema
+```js
+{
+	"required": [
+		"length"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"length"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'length' via required, Valid on arrays`
+## Original schema
+```js
+{
+	"required": [
+		"length"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"length"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'length' via required, Invalid if not present`
+## Original schema
+```js
+{
+	"required": [
+		"length"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"length"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'length' via required, Valid if present (string)`
+## Original schema
+```js
+{
+	"required": [
+		"length"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"length"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'length' via required, Valid if present (empty string)`
+## Original schema
+```js
+{
+	"required": [
+		"length"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"length"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'length' via required, Valid if present (boolean true)`
+## Original schema
+```js
+{
+	"required": [
+		"length"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"length"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'length' via required, Valid if present (boolean false)`
+## Original schema
+```js
+{
+	"required": [
+		"length"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"length"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'length' via required, Valid if present (array)`
+## Original schema
+```js
+{
+	"required": [
+		"length"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"length"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'length' via required, Valid if present (empty array)`
+## Original schema
+```js
+{
+	"required": [
+		"length"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"length"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'length' via required, Valid if present (object)`
+## Original schema
+```js
+{
+	"required": [
+		"length"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"length"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'length' via required, Valid if present (zero number)`
+## Original schema
+```js
+{
+	"required": [
+		"length"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"length"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'length' via required, Valid if present (number)`
+## Original schema
+```js
+{
+	"required": [
+		"length"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"length"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'length' via required, Valid on numbers`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'length' via required, Valid on arrays`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'length' via required, Valid if not present`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'length' via required, Valid if correct`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'length' via required, Invalid if incorrect (string)`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'length' via required, Invalid if incorrect (empty string)`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'length' via required, Invalid if incorrect (boolean true)`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'length' via required, Invalid if incorrect (boolean false)`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'length' via required, Invalid if incorrect (array)`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'length' via required, Invalid if incorrect (empty array)`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'length' via required, Invalid if incorrect (object)`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'length' via required, Valid on numbers`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'length' via required, Valid on arrays`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'length' via required, Valid if not present`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'length' via required, Valid if correct`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'length' via required, Invalid if incorrect (string)`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'length' via required, Invalid if incorrect (empty string)`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'length' via required, Invalid if incorrect (boolean true)`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'length' via required, Invalid if incorrect (boolean false)`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'length' via required, Invalid if incorrect (array)`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'length' via required, Invalid if incorrect (empty array)`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'length' via required, Invalid if incorrect (zero number)`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: 'length' via required, Invalid if incorrect (number)`
+## Original schema
+```js
+{
+	"properties": {
+		"length": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"length": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value: '__proto__' as number, Valid on numbers`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"default": "foo"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"default": "foo"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value: '__proto__' as number, Valid on arrays`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"default": "foo"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"default": "foo"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value: '__proto__' as number, Valid if not present`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"default": "foo"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"default": "foo"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value: '__proto__' as number, Valid if present (string)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"default": "foo"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"default": "foo"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value: '__proto__' as number, Valid if present (empty string)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"default": "foo"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"default": "foo"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value: '__proto__' as number, Valid if present (boolean true)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"default": "foo"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"default": "foo"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value: '__proto__' as number, Valid if present (boolean false)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"default": "foo"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"default": "foo"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value: '__proto__' as number, Valid if present (array)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"default": "foo"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"default": "foo"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value: '__proto__' as number, Valid if present (empty array)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"default": "foo"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"default": "foo"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value: '__proto__' as number, Valid if present (object)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"default": "foo"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"default": "foo"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value: '__proto__' as number, Valid if present (zero number)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"default": "foo"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"default": "foo"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value: '__proto__' as number, Valid if present (number)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"default": "foo"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"default": "foo"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value on a '__proto__' property: '__proto__' as object, Valid on numbers`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"__proto__": {
+					"default": "foo"
+				}
+			}
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"__proto__": {
+					"default": "foo"
+				}
+			},
+			"additionalProperties": true
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value on a '__proto__' property: '__proto__' as object, Valid on arrays`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"__proto__": {
+					"default": "foo"
+				}
+			}
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"__proto__": {
+					"default": "foo"
+				}
+			},
+			"additionalProperties": true
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value on a '__proto__' property: '__proto__' as object, Valid if not present`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"__proto__": {
+					"default": "foo"
+				}
+			}
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"__proto__": {
+					"default": "foo"
+				}
+			},
+			"additionalProperties": true
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value on a '__proto__' property: '__proto__' as object, Valid if present (string)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"__proto__": {
+					"default": "foo"
+				}
+			}
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"__proto__": {
+					"default": "foo"
+				}
+			},
+			"additionalProperties": true
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value on a '__proto__' property: '__proto__' as object, Valid if present (empty string)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"__proto__": {
+					"default": "foo"
+				}
+			}
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"__proto__": {
+					"default": "foo"
+				}
+			},
+			"additionalProperties": true
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value on a '__proto__' property: '__proto__' as object, Valid if present (boolean true)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"__proto__": {
+					"default": "foo"
+				}
+			}
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"__proto__": {
+					"default": "foo"
+				}
+			},
+			"additionalProperties": true
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value on a '__proto__' property: '__proto__' as object, Valid if present (boolean false)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"__proto__": {
+					"default": "foo"
+				}
+			}
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"__proto__": {
+					"default": "foo"
+				}
+			},
+			"additionalProperties": true
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value on a '__proto__' property: '__proto__' as object, Valid if present (array)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"__proto__": {
+					"default": "foo"
+				}
+			}
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"__proto__": {
+					"default": "foo"
+				}
+			},
+			"additionalProperties": true
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value on a '__proto__' property: '__proto__' as object, Valid if present (empty array)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"__proto__": {
+					"default": "foo"
+				}
+			}
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"__proto__": {
+					"default": "foo"
+				}
+			},
+			"additionalProperties": true
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value on a '__proto__' property: '__proto__' as object, Valid if present (object)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"__proto__": {
+					"default": "foo"
+				}
+			}
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"__proto__": {
+					"default": "foo"
+				}
+			},
+			"additionalProperties": true
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value on a '__proto__' property: '__proto__' as object, Valid if present (zero number)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"__proto__": {
+					"default": "foo"
+				}
+			}
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"__proto__": {
+					"default": "foo"
+				}
+			},
+			"additionalProperties": true
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Default value on a '__proto__' property: '__proto__' as object, Valid if present (number)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"__proto__": {
+					"default": "foo"
+				}
+			}
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"properties": {
+				"__proto__": {
+					"default": "foo"
+				}
+			},
+			"additionalProperties": true
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: '__proto__' via required, Valid on numbers`
+## Original schema
+```js
+{
+	"required": [
+		"__proto__"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"__proto__"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: '__proto__' via required, Valid on arrays`
+## Original schema
+```js
+{
+	"required": [
+		"__proto__"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"__proto__"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: '__proto__' via required, Invalid if not present`
+## Original schema
+```js
+{
+	"required": [
+		"__proto__"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"__proto__"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: '__proto__' via required, Valid if present (string)`
+## Original schema
+```js
+{
+	"required": [
+		"__proto__"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"__proto__"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: '__proto__' via required, Valid if present (empty string)`
+## Original schema
+```js
+{
+	"required": [
+		"__proto__"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"__proto__"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: '__proto__' via required, Valid if present (boolean true)`
+## Original schema
+```js
+{
+	"required": [
+		"__proto__"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"__proto__"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: '__proto__' via required, Valid if present (boolean false)`
+## Original schema
+```js
+{
+	"required": [
+		"__proto__"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"__proto__"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: '__proto__' via required, Valid if present (array)`
+## Original schema
+```js
+{
+	"required": [
+		"__proto__"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"__proto__"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: '__proto__' via required, Valid if present (empty array)`
+## Original schema
+```js
+{
+	"required": [
+		"__proto__"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"__proto__"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: '__proto__' via required, Valid if present (object)`
+## Original schema
+```js
+{
+	"required": [
+		"__proto__"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"__proto__"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: '__proto__' via required, Valid if present (zero number)`
+## Original schema
+```js
+{
+	"required": [
+		"__proto__"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"__proto__"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: '__proto__' via required, Valid if present (number)`
+## Original schema
+```js
+{
+	"required": [
+		"__proto__"
+	]
+}
+```
+## Schema after validating
+```js
+{
+	"required": [
+		"__proto__"
+	],
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: '__proto__' via required, Valid on numbers`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: '__proto__' via required, Valid on arrays`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: '__proto__' via required, Valid if not present`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: '__proto__' via required, Valid if correct`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: '__proto__' via required, Invalid if incorrect (string)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: '__proto__' via required, Invalid if incorrect (empty string)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: '__proto__' via required, Invalid if incorrect (boolean true)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: '__proto__' via required, Invalid if incorrect (boolean false)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: '__proto__' via required, Invalid if incorrect (array)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: '__proto__' via required, Invalid if incorrect (empty array)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: '__proto__' via required, Invalid if incorrect (object)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "number"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "number"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: '__proto__' via required, Valid on numbers`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: '__proto__' via required, Valid on arrays`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: '__proto__' via required, Valid if not present`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: '__proto__' via required, Valid if correct`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: '__proto__' via required, Invalid if incorrect (string)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: '__proto__' via required, Invalid if incorrect (empty string)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: '__proto__' via required, Invalid if incorrect (boolean true)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: '__proto__' via required, Invalid if incorrect (boolean false)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: '__proto__' via required, Invalid if incorrect (array)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: '__proto__' via required, Invalid if incorrect (empty array)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: '__proto__' via required, Invalid if incorrect (zero number)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
+[`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `Does not see inexisting elements on new objects: '__proto__' via required, Invalid if incorrect (number)`
+## Original schema
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "object"
+		}
+	}
+}
+```
+## Schema after validating
+```js
+{
+	"properties": {
+		"__proto__": {
+			"type": "object"
+		}
+	},
+	"additionalProperties": true
+}
+```
+
+# Side-effect on schema
 [`revalidator`](https://github.com/flatiron/revalidator) had a side-effect on (altered the original) schema in the test `relative pointer ref to object, match`
 ## Original schema
 ```js
