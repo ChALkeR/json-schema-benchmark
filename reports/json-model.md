@@ -11,8 +11,24 @@ that is the case for these tests.
 
 |test failed|reason
 |-----------|------
+`additionalProperties being false does not allow other properties, no additional properties is valid`|The schema failed to load(`Cannot use 'in' operator to search for 'maxItems' in foo`). **This excludes this validator from performance tests**
+`additionalProperties being false does not allow other properties, an additional property is invalid`|The schema failed to load(`Cannot use 'in' operator to search for 'maxItems' in foo`). **This excludes this validator from performance tests**
+`additionalProperties being false does not allow other properties, ignores arrays`|The schema failed to load(`Cannot use 'in' operator to search for 'maxItems' in foo`). **This excludes this validator from performance tests**
+`additionalProperties being false does not allow other properties, ignores strings`|The schema failed to load(`Cannot use 'in' operator to search for 'maxItems' in foo`). **This excludes this validator from performance tests**
+`additionalProperties being false does not allow other properties, ignores other non-objects`|The schema failed to load(`Cannot use 'in' operator to search for 'maxItems' in foo`). **This excludes this validator from performance tests**
+`additionalProperties being false does not allow other properties, patternProperties are not additional properties`|The schema failed to load(`Cannot use 'in' operator to search for 'maxItems' in foo`). **This excludes this validator from performance tests**
+`non-ASCII pattern with additionalProperties, matching the pattern is valid`|The schema failed to load(`Cannot use 'in' operator to search for 'maxItems' in foo`). **This excludes this validator from performance tests**
+`non-ASCII pattern with additionalProperties, not matching the pattern is invalid`|The schema failed to load(`Cannot use 'in' operator to search for 'maxItems' in foo`). **This excludes this validator from performance tests**
+`additionalProperties can exist by itself, an additional invalid property is invalid`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
+`additionalProperties should not look in applicators, properties defined in allOf are not examined`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
+`allOf, mismatch first`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
+`allOf with base schema, mismatch first allOf`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
+`anyOf complex types, neither anyOf valid (complex)`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
 `valid definition, valid definition schema`|The schema failed to load(`Requests not enabled - try JsonModel.setRequestFunction(func): {"method":"GET","url":"http://json-schema.org/draft-04/schema"}`). **This excludes this validator from performance tests**
 `invalid definition, invalid definition schema`|Expected result: `false` but validator returned: `true`
+`dependencies, missing dependency`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
+`multiple dependencies, missing other dependency`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
+`multiple dependencies subschema, wrong type`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
 `simple enum validation, something else is invalid`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
 `heterogeneous enum validation, something else is invalid`|Expected result: `false` but validator returned: `true`
 `heterogeneous enum validation, objects are deep compared`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
@@ -29,6 +45,7 @@ that is the case for these tests.
 `nul characters in strings, do not match string lacking nul`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
 `an array of schemas for items, incomplete array of items`|Expected result: `true` but validator returned: `false`. **This excludes this validator from performance tests**
 `an array of schemas for items, empty array`|Expected result: `true` but validator returned: `false`. **This excludes this validator from performance tests**
+`items and subitems, wrong sub-item`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
 `items and subitems, fewer items is valid`|Expected result: `true` but validator returned: `false`. **This excludes this validator from performance tests**
 `nested items, valid nested array`|Expected result: `true` but validator returned: `"Cannot read property '1' of undefined"`. **This excludes this validator from performance tests**
 `nested items, nested array with invalid type`|Expected result: `false` but validator returned: `"Cannot read property '1' of undefined"`. **This excludes this validator from performance tests**
@@ -38,6 +55,11 @@ that is the case for these tests.
 `not multiple types, other mismatch`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
 `not more complex schema, mismatch`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
 `forbidden property, property present`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
+`oneOf complex types, first oneOf valid (complex)`|Expected result: `true` but validator returned: `false`. **This excludes this validator from performance tests**
+`oneOf complex types, neither oneOf valid (complex)`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
+`oneOf with required, both invalid - invalid`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
+`oneOf with missing optional property, first oneOf valid`|Expected result: `true` but validator returned: `false`. **This excludes this validator from performance tests**
+`oneOf with missing optional property, neither oneOf valid`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
 `ECMA 262 regex non-compliance, ECMA 262 has no support for \Z anchor from .NET`|Expected result: `false` but validator returned: `true`
 `validation of date-time strings, a invalid day in date-time string`|Expected result: `false` but validator returned: `true`
 `validation of date-time strings, an invalid offset in date-time string`|Expected result: `false` but validator returned: `true`
@@ -75,7 +97,36 @@ that is the case for these tests.
 `validation of URIs, an invalid URI with spaces and missing scheme`|Expected result: `false` but validator returned: `true`
 `Proper UTF-16 surrogate pair handling: pattern, matches empty`|Expected result: `true` but validator returned: `false`
 `Proper UTF-16 surrogate pair handling: pattern, matches two`|Expected result: `true` but validator returned: `false`
-`Proper UTF-16 surrogate pair handling: patternProperties, doesn't match two`|Expected result: `false` but validator returned: `true`
+`Proper UTF-16 surrogate pair handling: patternProperties, matches empty`|The schema failed to load(`Cannot use 'in' operator to search for 'maxItems' in foo`)
+`Proper UTF-16 surrogate pair handling: patternProperties, matches single`|The schema failed to load(`Cannot use 'in' operator to search for 'maxItems' in foo`)
+`Proper UTF-16 surrogate pair handling: patternProperties, matches two`|The schema failed to load(`Cannot use 'in' operator to search for 'maxItems' in foo`)
+`Proper UTF-16 surrogate pair handling: patternProperties, doesn't match one`|The schema failed to load(`Cannot use 'in' operator to search for 'maxItems' in foo`)
+`Proper UTF-16 surrogate pair handling: patternProperties, doesn't match two`|The schema failed to load(`Cannot use 'in' operator to search for 'maxItems' in foo`)
+`patternProperties validates properties matching a regex, a single valid match is valid`|The schema failed to load(`Cannot use 'in' operator to search for 'maxItems' in foo`). **This excludes this validator from performance tests**
+`patternProperties validates properties matching a regex, multiple valid matches is valid`|The schema failed to load(`Cannot use 'in' operator to search for 'maxItems' in foo`). **This excludes this validator from performance tests**
+`patternProperties validates properties matching a regex, a single invalid match is invalid`|The schema failed to load(`Cannot use 'in' operator to search for 'maxItems' in foo`). **This excludes this validator from performance tests**
+`patternProperties validates properties matching a regex, multiple invalid matches is invalid`|The schema failed to load(`Cannot use 'in' operator to search for 'maxItems' in foo`). **This excludes this validator from performance tests**
+`patternProperties validates properties matching a regex, ignores arrays`|The schema failed to load(`Cannot use 'in' operator to search for 'maxItems' in foo`). **This excludes this validator from performance tests**
+`patternProperties validates properties matching a regex, ignores strings`|The schema failed to load(`Cannot use 'in' operator to search for 'maxItems' in foo`). **This excludes this validator from performance tests**
+`patternProperties validates properties matching a regex, ignores other non-objects`|The schema failed to load(`Cannot use 'in' operator to search for 'maxItems' in foo`). **This excludes this validator from performance tests**
+`multiple simultaneous patternProperties are validated, a single valid match is valid`|The schema failed to load(`Cannot use 'in' operator to search for 'maxItems' in foo`). **This excludes this validator from performance tests**
+`multiple simultaneous patternProperties are validated, a simultaneous match is valid`|The schema failed to load(`Cannot use 'in' operator to search for 'maxItems' in foo`). **This excludes this validator from performance tests**
+`multiple simultaneous patternProperties are validated, multiple matches is valid`|The schema failed to load(`Cannot use 'in' operator to search for 'maxItems' in foo`). **This excludes this validator from performance tests**
+`multiple simultaneous patternProperties are validated, an invalid due to one is invalid`|The schema failed to load(`Cannot use 'in' operator to search for 'maxItems' in foo`). **This excludes this validator from performance tests**
+`multiple simultaneous patternProperties are validated, an invalid due to the other is invalid`|The schema failed to load(`Cannot use 'in' operator to search for 'maxItems' in foo`). **This excludes this validator from performance tests**
+`multiple simultaneous patternProperties are validated, an invalid due to both is invalid`|The schema failed to load(`Cannot use 'in' operator to search for 'maxItems' in foo`). **This excludes this validator from performance tests**
+`regexes are not anchored by default and are case sensitive, non recognized members are ignored`|The schema failed to load(`Cannot use 'in' operator to search for 'maxItems' in foo`). **This excludes this validator from performance tests**
+`regexes are not anchored by default and are case sensitive, recognized members are accounted for`|The schema failed to load(`Cannot use 'in' operator to search for 'maxItems' in foo`). **This excludes this validator from performance tests**
+`regexes are not anchored by default and are case sensitive, regexes are case sensitive`|The schema failed to load(`Cannot use 'in' operator to search for 'maxItems' in foo`). **This excludes this validator from performance tests**
+`regexes are not anchored by default and are case sensitive, regexes are case sensitive, 2`|The schema failed to load(`Cannot use 'in' operator to search for 'maxItems' in foo`). **This excludes this validator from performance tests**
+`properties, patternProperties, additionalProperties interaction, property validates property`|The schema failed to load(`Cannot use 'in' operator to search for 'maxItems' in foo`). **This excludes this validator from performance tests**
+`properties, patternProperties, additionalProperties interaction, property invalidates property`|The schema failed to load(`Cannot use 'in' operator to search for 'maxItems' in foo`). **This excludes this validator from performance tests**
+`properties, patternProperties, additionalProperties interaction, patternProperty invalidates property`|The schema failed to load(`Cannot use 'in' operator to search for 'maxItems' in foo`). **This excludes this validator from performance tests**
+`properties, patternProperties, additionalProperties interaction, patternProperty validates nonproperty`|The schema failed to load(`Cannot use 'in' operator to search for 'maxItems' in foo`). **This excludes this validator from performance tests**
+`properties, patternProperties, additionalProperties interaction, patternProperty invalidates nonproperty`|The schema failed to load(`Cannot use 'in' operator to search for 'maxItems' in foo`). **This excludes this validator from performance tests**
+`properties, patternProperties, additionalProperties interaction, additionalProperty ignores property`|The schema failed to load(`Cannot use 'in' operator to search for 'maxItems' in foo`). **This excludes this validator from performance tests**
+`properties, patternProperties, additionalProperties interaction, additionalProperty validates others`|The schema failed to load(`Cannot use 'in' operator to search for 'maxItems' in foo`). **This excludes this validator from performance tests**
+`properties, patternProperties, additionalProperties interaction, additionalProperty invalidates others`|The schema failed to load(`Cannot use 'in' operator to search for 'maxItems' in foo`). **This excludes this validator from performance tests**
 `properties with escaped characters, object with all numbers is valid`|The schema failed to load(`missing ) after argument list`). **This excludes this validator from performance tests**
 `properties with escaped characters, object with strings is invalid`|The schema failed to load(`missing ) after argument list`). **This excludes this validator from performance tests**
 `Does not see elements non existing on the object: 'toString' as number, Invalid if incorrect (string)`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
@@ -126,6 +177,22 @@ that is the case for these tests.
 `Does not see elements non existing on the object: '__proto__' as object, Invalid if incorrect (zero number)`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
 `Does not see elements non existing on the object: '__proto__' as object, Invalid if incorrect (number)`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
 `Does not see elements non existing on the object: '__proto__' via required, Invalid if not present`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
+`Does not see inexisting elements on new objects: 'foo' via required, Invalid if not present`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
+`Does not see inexisting elements on new objects: 'foo' via required, Invalid if incorrect (string)`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
+`Does not see inexisting elements on new objects: 'foo' via required, Invalid if incorrect (empty string)`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
+`Does not see inexisting elements on new objects: 'foo' via required, Invalid if incorrect (boolean true)`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
+`Does not see inexisting elements on new objects: 'foo' via required, Invalid if incorrect (boolean false)`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
+`Does not see inexisting elements on new objects: 'foo' via required, Invalid if incorrect (array)`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
+`Does not see inexisting elements on new objects: 'foo' via required, Invalid if incorrect (empty array)`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
+`Does not see inexisting elements on new objects: 'foo' via required, Invalid if incorrect (object)`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
+`Does not see inexisting elements on new objects: 'foo' via required, Invalid if incorrect (string)`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
+`Does not see inexisting elements on new objects: 'foo' via required, Invalid if incorrect (empty string)`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
+`Does not see inexisting elements on new objects: 'foo' via required, Invalid if incorrect (boolean true)`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
+`Does not see inexisting elements on new objects: 'foo' via required, Invalid if incorrect (boolean false)`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
+`Does not see inexisting elements on new objects: 'foo' via required, Invalid if incorrect (array)`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
+`Does not see inexisting elements on new objects: 'foo' via required, Invalid if incorrect (empty array)`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
+`Does not see inexisting elements on new objects: 'foo' via required, Invalid if incorrect (zero number)`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
+`Does not see inexisting elements on new objects: 'foo' via required, Invalid if incorrect (number)`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
 `Does not see inexisting elements on new objects: '__proto__' via required, Invalid if not present`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
 `Does not see inexisting elements on new objects: '__proto__' via required, Invalid if incorrect (string)`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
 `Does not see inexisting elements on new objects: '__proto__' via required, Invalid if incorrect (empty string)`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
@@ -142,6 +209,8 @@ that is the case for these tests.
 `Does not see inexisting elements on new objects: '__proto__' via required, Invalid if incorrect (empty array)`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
 `Does not see inexisting elements on new objects: '__proto__' via required, Invalid if incorrect (zero number)`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
 `Does not see inexisting elements on new objects: '__proto__' via required, Invalid if incorrect (number)`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
+`root pointer ref, recursive mismatch`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
+`ref overrides any sibling keywords, ref invalid`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
 `remote ref, containing refs itself, remote ref invalid`|Expected result: `false` but validator returned: `true`
 `Recursive references between schemas, valid tree`|The schema failed to load(`Requests not enabled - try JsonModel.setRequestFunction(func): {"method":"GET","url":"http://localhost:1234/node"}`)
 `Recursive references between schemas, invalid tree`|The schema failed to load(`Requests not enabled - try JsonModel.setRequestFunction(func): {"method":"GET","url":"http://localhost:1234/node"}`)
@@ -164,6 +233,7 @@ that is the case for these tests.
 `root ref in remote ref, string is valid`|The schema failed to load(`Requests not enabled - try JsonModel.setRequestFunction(func): {"method":"GET","url":"http://localhost:1234/name.json"}`)
 `root ref in remote ref, null is valid`|The schema failed to load(`Requests not enabled - try JsonModel.setRequestFunction(func): {"method":"GET","url":"http://localhost:1234/name.json"}`). **This excludes this validator from performance tests**
 `root ref in remote ref, object is invalid`|The schema failed to load(`Requests not enabled - try JsonModel.setRequestFunction(func): {"method":"GET","url":"http://localhost:1234/name.json"}`)
+`required validation, non-present required property is invalid`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
 `uniqueItems validation, non-unique array of integers is invalid`|Expected result: `false` but validator returned: `true`
 `uniqueItems validation, numbers are unique if mathematically unequal`|Expected result: `false` but validator returned: `true`
 `uniqueItems validation, non-unique array of objects is invalid`|Expected result: `false` but validator returned: `true`

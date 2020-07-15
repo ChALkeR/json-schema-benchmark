@@ -48,6 +48,7 @@ that is the case for these tests.
 `nested anyOf, to check validation semantics, anything non-null is invalid`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
 `nested anyOf, to check validation semantics, null is valid`|Expected result: `true` but validator returned: `"Cannot convert undefined or null to object"`. **This excludes this validator from performance tests**
 `nested anyOf, to check validation semantics, anything non-null is invalid`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
+`invalid type for default, still valid when the invalid default is used`|Expected result: `true` but validator returned: `false`. **This excludes this validator from performance tests**
 `invalid definition, invalid definition schema`|Expected result: `false` but validator returned: `true`
 `dependencies, missing dependency`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
 `multiple dependencies, missing dependency`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
@@ -190,6 +191,11 @@ that is the case for these tests.
 `Proper UTF-16 surrogate pair handling: patternProperties, doesn't match two`|Expected result: `false` but validator returned: `true`
 `pattern validation, a non-matching pattern is invalid`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
 `pattern validation, ignores null`|Expected result: `true` but validator returned: `"Cannot convert undefined or null to object"`. **This excludes this validator from performance tests**
+`object properties validation, doesn't invalidate other properties`|Expected result: `true` but validator returned: `false`. **This excludes this validator from performance tests**
+`object properties validation, ignores arrays`|Expected result: `true` but validator returned: `false`. **This excludes this validator from performance tests**
+`object properties validation, ignores other non-objects`|Expected result: `true` but validator returned: `false`. **This excludes this validator from performance tests**
+`properties, patternProperties, additionalProperties interaction, patternProperty validates nonproperty`|Expected result: `true` but validator returned: `false`. **This excludes this validator from performance tests**
+`properties, patternProperties, additionalProperties interaction, additionalProperty ignores property`|Expected result: `true` but validator returned: `false`. **This excludes this validator from performance tests**
 `properties, patternProperties, additionalProperties interaction, additionalProperty validates others`|Expected result: `true` but validator returned: `"Cannot read property 'format' of undefined"`. **This excludes this validator from performance tests**
 `properties, patternProperties, additionalProperties interaction, additionalProperty invalidates others`|Expected result: `false` but validator returned: `"Cannot read property 'format' of undefined"`. **This excludes this validator from performance tests**
 `Does not see elements non existing on the object: 'x' via required, Invalid if not present`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
@@ -215,6 +221,12 @@ that is the case for these tests.
 `Does not see elements non existing on the object: '__proto__' as object, Valid on arrays`|Expected result: `true` but validator returned: `false`. **This excludes this validator from performance tests**
 `Does not see elements non existing on the object: '__proto__' via required, Invalid if not present`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
 `Does not see inexisting elements on new objects: 'foo' via required, Invalid if not present`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
+`Does not see inexisting elements on new objects: 'foo' via required, Valid on numbers`|Expected result: `true` but validator returned: `false`. **This excludes this validator from performance tests**
+`Does not see inexisting elements on new objects: 'foo' via required, Valid on arrays`|Expected result: `true` but validator returned: `false`. **This excludes this validator from performance tests**
+`Does not see inexisting elements on new objects: 'foo' via required, Valid if not present`|Expected result: `true` but validator returned: `false`. **This excludes this validator from performance tests**
+`Does not see inexisting elements on new objects: 'foo' via required, Valid on numbers`|Expected result: `true` but validator returned: `false`. **This excludes this validator from performance tests**
+`Does not see inexisting elements on new objects: 'foo' via required, Valid on arrays`|Expected result: `true` but validator returned: `false`. **This excludes this validator from performance tests**
+`Does not see inexisting elements on new objects: 'foo' via required, Valid if not present`|Expected result: `true` but validator returned: `false`. **This excludes this validator from performance tests**
 `Does not see inexisting elements on new objects: 'length' via required, Invalid if not present`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
 `Does not see inexisting elements on new objects: 'length' via required, Valid on arrays`|Expected result: `true` but validator returned: `false`. **This excludes this validator from performance tests**
 `Does not see inexisting elements on new objects: '__proto__' via required, Invalid if not present`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
@@ -223,7 +235,7 @@ that is the case for these tests.
 `Does not see inexisting elements on new objects: '__proto__' via required, Valid if not present`|Expected result: `true` but validator returned: `false`. **This excludes this validator from performance tests**
 `Does not see inexisting elements on new objects: '__proto__' via required, Valid on arrays`|Expected result: `true` but validator returned: `false`. **This excludes this validator from performance tests**
 `root pointer ref, recursive mismatch`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
-`relative pointer ref to object, mismatch`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
+`relative pointer ref to object, match`|Expected result: `true` but validator returned: `false`. **This excludes this validator from performance tests**
 `relative pointer ref to array, mismatch array`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
 `escaped pointer ref, slash invalid`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
 `escaped pointer ref, tilde invalid`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
