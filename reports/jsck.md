@@ -24,6 +24,19 @@ that is the case for these tests.
 `Proper UTF-16 surrogate pair handling: pattern, matches empty`|Expected result: `true` but validator returned: `false`
 `Proper UTF-16 surrogate pair handling: pattern, matches two`|Expected result: `true` but validator returned: `false`
 `Proper UTF-16 surrogate pair handling: patternProperties, doesn't match two`|Expected result: `false` but validator returned: `true`
+`Does not see elements non existing on the object: 'toString' via required, Invalid if not present`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
+`Does not see elements non existing on the object: 'constructor' via required, Invalid if not present`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
+`Does not see elements non existing on the object: '__proto__' via required, Invalid if not present`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
+`Default value on a '__proto__' property: 'length' as object, Valid if present (string)`|Expected result: `true` but validator returned: `"test is not a function"`. **This excludes this validator from performance tests**
+`Default value on a '__proto__' property: 'length' as object, Valid if present (empty string)`|Expected result: `true` but validator returned: `"test is not a function"`. **This excludes this validator from performance tests**
+`Default value on a '__proto__' property: 'length' as object, Valid if present (boolean true)`|Expected result: `true` but validator returned: `"test is not a function"`. **This excludes this validator from performance tests**
+`Default value on a '__proto__' property: 'length' as object, Valid if present (boolean false)`|Expected result: `true` but validator returned: `"test is not a function"`. **This excludes this validator from performance tests**
+`Default value on a '__proto__' property: 'length' as object, Valid if present (array)`|Expected result: `true` but validator returned: `"test is not a function"`. **This excludes this validator from performance tests**
+`Default value on a '__proto__' property: 'length' as object, Valid if present (empty array)`|Expected result: `true` but validator returned: `"test is not a function"`. **This excludes this validator from performance tests**
+`Default value on a '__proto__' property: 'length' as object, Valid if present (object)`|Expected result: `true` but validator returned: `"test is not a function"`. **This excludes this validator from performance tests**
+`Default value on a '__proto__' property: 'length' as object, Valid if present (zero number)`|Expected result: `true` but validator returned: `"test is not a function"`. **This excludes this validator from performance tests**
+`Default value on a '__proto__' property: 'length' as object, Valid if present (number)`|Expected result: `true` but validator returned: `"test is not a function"`. **This excludes this validator from performance tests**
+`Does not see inexisting elements on new objects: '__proto__' via required, Invalid if not present`|Expected result: `false` but validator returned: `true`. **This excludes this validator from performance tests**
 `ref overrides any sibling keywords, ref valid, maxItems ignored`|Expected result: `true` but validator returned: `false`
 `Recursive references between schemas, valid tree`|The schema failed to load(`Unresolvable $ref values: ["http://localhost:1234/node","http://localhost:1234/tree"]`)
 `Recursive references between schemas, invalid tree`|The schema failed to load(`Unresolvable $ref values: ["http://localhost:1234/node","http://localhost:1234/tree"]`)

@@ -68,6 +68,14 @@ that is the case for these tests.
 `Proper UTF-16 surrogate pair handling: pattern, matches empty`|Expected result: `true` but validator returned: `false`
 `Proper UTF-16 surrogate pair handling: pattern, matches two`|Expected result: `true` but validator returned: `false`
 `Proper UTF-16 surrogate pair handling: patternProperties, doesn't match two`|Expected result: `false` but validator returned: `true`
+`Does not see elements non existing on the object: 'x' via required, Valid on numbers`|Expected result: `true` but validator returned: `false`. **This excludes this validator from performance tests**
+`Does not see elements non existing on the object: 'length' via required, Valid on numbers`|Expected result: `true` but validator returned: `false`. **This excludes this validator from performance tests**
+`Does not see elements non existing on the object: 'toString' via required, Valid on numbers`|Expected result: `true` but validator returned: `false`. **This excludes this validator from performance tests**
+`Does not see elements non existing on the object: 'constructor' via required, Valid on numbers`|Expected result: `true` but validator returned: `false`. **This excludes this validator from performance tests**
+`Does not see elements non existing on the object: '__proto__' via required, Valid on numbers`|Expected result: `true` but validator returned: `false`. **This excludes this validator from performance tests**
+`Does not see inexisting elements on new objects: 'foo' via required, Valid on numbers`|Expected result: `true` but validator returned: `false`. **This excludes this validator from performance tests**
+`Does not see inexisting elements on new objects: 'length' via required, Valid on numbers`|Expected result: `true` but validator returned: `false`. **This excludes this validator from performance tests**
+`Does not see inexisting elements on new objects: '__proto__' via required, Valid on numbers`|Expected result: `true` but validator returned: `false`. **This excludes this validator from performance tests**
 `escaped pointer ref, slash valid`|Expected result: `true` but validator returned: `false`. **This excludes this validator from performance tests**
 `escaped pointer ref, tilde valid`|Expected result: `true` but validator returned: `false`. **This excludes this validator from performance tests**
 `escaped pointer ref, percent valid`|Expected result: `true` but validator returned: `false`. **This excludes this validator from performance tests**

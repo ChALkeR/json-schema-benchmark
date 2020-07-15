@@ -40,6 +40,22 @@ that is the case for these tests.
 `Proper UTF-16 surrogate pair handling: patternProperties, doesn't match two`|Expected result: `false` but validator returned: `true`
 `properties with escaped characters, object with all numbers is valid`|The schema failed to load(`Unexpected identifier`). **This excludes this validator from performance tests**
 `properties with escaped characters, object with strings is invalid`|The schema failed to load(`Unexpected identifier`). **This excludes this validator from performance tests**
+`Does not see elements non existing on the object: 'length' as object, Valid on arrays`|Expected result: `true` but validator returned: `false`. **This excludes this validator from performance tests**
+`Does not see elements non existing on the object: 'toString' as number, Valid on arrays`|Expected result: `true` but validator returned: `false`. **This excludes this validator from performance tests**
+`Does not see elements non existing on the object: 'toString' as number, Valid if not present`|Expected result: `true` but validator returned: `false`. **This excludes this validator from performance tests**
+`Does not see elements non existing on the object: 'toString' as object, Valid on arrays`|Expected result: `true` but validator returned: `false`. **This excludes this validator from performance tests**
+`Does not see elements non existing on the object: 'toString' as object, Valid if not present`|Expected result: `true` but validator returned: `false`. **This excludes this validator from performance tests**
+`Does not see elements non existing on the object: 'constructor' as number, Valid on arrays`|Expected result: `true` but validator returned: `false`. **This excludes this validator from performance tests**
+`Does not see elements non existing on the object: 'constructor' as number, Valid if not present`|Expected result: `true` but validator returned: `false`. **This excludes this validator from performance tests**
+`Does not see elements non existing on the object: 'constructor' as object, Valid on arrays`|Expected result: `true` but validator returned: `false`. **This excludes this validator from performance tests**
+`Does not see elements non existing on the object: 'constructor' as object, Valid if not present`|Expected result: `true` but validator returned: `false`. **This excludes this validator from performance tests**
+`Does not see elements non existing on the object: '__proto__' as number, Valid on arrays`|Expected result: `true` but validator returned: `false`. **This excludes this validator from performance tests**
+`Does not see elements non existing on the object: '__proto__' as number, Valid if not present`|Expected result: `true` but validator returned: `false`. **This excludes this validator from performance tests**
+`Does not see elements non existing on the object: '__proto__' as object, Valid on arrays`|Expected result: `true` but validator returned: `false`. **This excludes this validator from performance tests**
+`Does not see inexisting elements on new objects: 'length' via required, Valid on arrays`|Expected result: `true` but validator returned: `false`. **This excludes this validator from performance tests**
+`Does not see inexisting elements on new objects: '__proto__' via required, Valid on arrays`|Expected result: `true` but validator returned: `false`. **This excludes this validator from performance tests**
+`Does not see inexisting elements on new objects: '__proto__' via required, Valid if not present`|Expected result: `true` but validator returned: `false`. **This excludes this validator from performance tests**
+`Does not see inexisting elements on new objects: '__proto__' via required, Valid on arrays`|Expected result: `true` but validator returned: `false`. **This excludes this validator from performance tests**
 `remote ref, containing refs itself, remote ref valid`|The schema failed to load(`Remote refs are not supported for now :(`). **This excludes this validator from performance tests**
 `remote ref, containing refs itself, remote ref invalid`|The schema failed to load(`Remote refs are not supported for now :(`)
 `Recursive references between schemas, valid tree`|The schema failed to load(`Cannot read property 'split' of undefined`)

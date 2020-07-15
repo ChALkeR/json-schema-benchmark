@@ -64,6 +64,8 @@ that is the case for these tests.
 `Proper UTF-16 surrogate pair handling: patternProperties, doesn't match two`|Expected result: `false` but validator returned: `true`
 `properties with escaped characters, object with all numbers is valid`|The schema failed to load(`Invalid or unexpected token`). **This excludes this validator from performance tests**
 `properties with escaped characters, object with strings is invalid`|The schema failed to load(`Invalid or unexpected token`). **This excludes this validator from performance tests**
+`Does not see elements non existing on the object: 'length' as object, Valid on arrays`|Expected result: `true` but validator returned: `false`. **This excludes this validator from performance tests**
+`Does not see inexisting elements on new objects: 'length' via required, Valid on arrays`|Expected result: `true` but validator returned: `false`. **This excludes this validator from performance tests**
 `refs with quote, object with numbers is valid`|The schema failed to load(`missing ) after argument list`). **This excludes this validator from performance tests**
 `refs with quote, object with strings is invalid`|The schema failed to load(`missing ) after argument list`). **This excludes this validator from performance tests**
 `Location-independent identifier, match`|Expected result: `true` but validator returned: `"Maximum call stack size exceeded"`
